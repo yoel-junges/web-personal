@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Metadatos básicos de la página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página Personal</title>
+    <link rel="icon" href="data:,">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Cabecera principal de la página -->
-    <!-- Contiene el título principal y un mensaje de bienvenida -->
-    <header>
-        <h1>Mi Página Personal</h1>
-        <p>¡Bienvenido a mi espacio en la web!</p>
-    </header>
-
-    <!-- Menú de navegación principal -->
-    <!-- Permite la navegación entre las diferentes secciones de la página -->
     <nav>
         <ul>
             <li><a href="#sobre-mi">Sobre Mí</a></li>
@@ -24,42 +17,89 @@
         </ul>
     </nav>
 
-    <!-- Sección "Sobre Mí" -->
-    <!-- Contiene información personal, foto de perfil y descripción -->
-    <section id="sobre-mi">
-        <h2>Sobre Mí</h2>
-        <img src="perfil.jpeg" alt="Mi foto de perfil" width="300">
-        <p>¡Hola! Soy un desarrollador web apasionado por crear experiencias digitales increíbles. Me encanta aprender nuevas tecnologías y compartir mi conocimiento con otros.</p>
-        <p>En mi tiempo libre, disfruto de la programación, la lectura y el senderismo. Siempre estoy buscando nuevos desafíos y oportunidades para crecer profesionalmente.</p>
-    </section>
+    <main>
+        <div class="container">
+            <div class="main-content">
+                <div class="left-column">
+                    <div class="profile-image">
+                        <img src="perfil.jpeg" alt="Mi foto de perfil">
+                    </div>
+                </div>
 
-    <!-- Sección "Habilidades" -->
-    <!-- Lista de competencias y habilidades profesionales -->
-    <section id="habilidades">
-        <h2>Mis Habilidades</h2>
-        <ul>
-            <li>Desarrollo Web Frontend</li>
-            <li>HTML5 y CSS3</li>
-            <li>JavaScript</li>
-            <li>Diseño Responsivo</li>
-            <li>Trabajo en Equipo</li>
-        </ul>
-    </section>
+                <div class="right-column">
+                    <section id="sobre-mi">
+                        <h1>Yoel Darío Junges</h1>
+                        <p class="subtitle">Desarrollador de Software en Formación</p>
+                        <p>¡Hola! Soy Yoel Darío Junges, estudiante de la Tecnicatura Superior en Desarrollo de Software en el Instituto Tecnológico El Molino (3° año en curso) y actualmente me desempeño como distribuidor en Correo Argentino. Me caracterizo por mi alta motivación, compromiso y sentido de responsabilidad en cada proyecto que asumo.</p>
+                        <p>He forjado mi trayectoria profesional tanto en el ámbito privado —desde la dinámica metalúrgica de HAIZEA-SICA— como en el sector público de Correo Argentino, demostrando una capacidad de adaptación excepcional y un hambre constante de superación. Mi enfoque proactivo y mi curiosidad por las nuevas tecnologías me impulsan a buscar retos que me permitan innovar, liderar iniciativas y aportar soluciones eficientes. Estoy listo para sumarme a equipos que compartan la misma pasión por la excelencia y el crecimiento continuo.</p>
+                    </section>
+                </div>
+            </div>
 
-    <!-- Sección "Contacto" -->
-    <!-- Información de contacto y enlaces a redes sociales -->
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>¡Conectemos! Puedes encontrarme en:</p>
-        <ul>
-            <li><a href="https://github.com/tu-usuario" target="_blank">GitHub</a></li>
-            <li><a href="https://linkedin.com/in/tu-usuario" target="_blank">LinkedIn</a></li>
-            <li><a href="mailto:tu@email.com">Email</a></li>
-        </ul>
-    </section>
+            <div class="additional-sections">
+                <section id="habilidades" class="skills-section">
+                    <h2>Mis Habilidades</h2>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">💻</div>
+                            <h3>Desarrollo Web Frontend</h3>
+                            <p>Creación de interfaces web modernas y responsivas</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🎨</div>
+                            <h3>HTML5 y CSS3</h3>
+                            <p>Maquetación y estilizado de páginas web</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">⚡</div>
+                            <h3>JavaScript</h3>
+                            <p>Desarrollo de funcionalidades interactivas</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🐍</div>
+                            <h3>Python</h3>
+                            <p>Desarrollo de aplicaciones con Tkinter y bases de datos</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🗄️</div>
+                            <h3>Bases de Datos</h3>
+                            <p>Manejo de bases de datos planas y relacionales</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">📱</div>
+                            <h3>Diseño Responsivo</h3>
+                            <p>Adaptación a diferentes dispositivos</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🤝</div>
+                            <h3>Trabajo en Equipo</h3>
+                            <p>Colaboración efectiva en proyectos grupales</p>
+                        </div>
+                    </div>
+                </section>
 
-    <!-- Pie de página -->
-    <!-- Contiene información de copyright y derechos reservados -->
+                <section id="contacto" class="contact-section">
+                    <h2>Contacto</h2>
+                    <p class="contact-intro">¡Conectemos! Estoy disponible para nuevas oportunidades y colaboraciones.</p>
+                    <div class="contact-links">
+                        <a href="https://github.com/yoel-junges" target="_blank" class="contact-link github">
+                            <span class="contact-icon">📦</span>
+                            <span class="contact-text">GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yoel-junges-b4660a320/" target="_blank" class="contact-link linkedin">
+                            <span class="contact-icon">💼</span>
+                            <span class="contact-text">LinkedIn</span>
+                        </a>
+                        <a href="mailto:jungesyoel@gmail.com" class="contact-link email">
+                            <span class="contact-icon">✉️</span>
+                            <span class="contact-text">Email</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
     <footer>
         <p>&copy; 2024 Mi Página Personal. Todos los derechos reservados.</p>
     </footer>
